@@ -151,7 +151,7 @@ input[type="submit"]{
     #contact{
         font-size: 0.6rem;
     }
-    .center{
+    .center input{
         text-align: center;
         font-size: 0.1rem;
     }

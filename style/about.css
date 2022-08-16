@@ -1,0 +1,134 @@
+.section{
+    margin: 2rem 0 0 0;
+}
+#about{
+    display: flex;
+    background-color: rgba(var(--color-primary-bg), 0.4);
+    position: relative;
+    height: 85vh;
+}
+a{
+    text-decoration: none;
+    color: var(--color-text);
+}
+.circle{
+    margin: 3rem;
+    border-radius: 50%;
+    height: 8.5rem;
+    background: linear-gradient( to bottom right, rgba(var(--color-btn-linear), 1), rgba(var(--color-hue-linear), 1) );
+}
+.btn{
+    background-color: var(--color-btn);
+    font-weight: bold;
+    border: var(--color-hue) 0.2rem solid;
+}
+@media screen and (min-width:1024px) {
+    .section{
+        margin: 2rem 0 0 0;
+    }
+    #about{
+        display: flex;
+        background-color: rgba(var(--color-primary-bg), 0.4);
+        position: relative;
+        height: 85vh;
+    }
+    h2{
+        margin: 8rem 0 0 0;
+        color: var(--color-text);
+    }
+    a{
+        text-decoration: none;
+        color: var(--color-text);
+    }
+    #main-img{
+        position: relative;
+        margin: -13rem 0 0 auto;
+    }
+    .circle{
+        margin: 3rem;
+        border-radius: 50%;
+        height: 8.5rem;
+        background: linear-gradient( to bottom right, rgba(var(--color-btn-linear), 1), rgba(var(--color-hue-linear), 1) );
+    }
+    #crop-img{
+        border-radius: 50%;
+        height: 8rem;
+        border: none;
+        display: none;
+        margin: 0.3rem;
+    }
+    .btn{
+        padding: 0.7rem;
+        background-color: var(--color-btn);
+        font-weight: bold;
+        border: var(--color-hue) 0.2rem solid;
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:1023px ) {
+    .section{
+        margin: 2rem 0 0 0;
+    }
+    #about{
+        display: grid;
+        place-items: center;
+    }
+    #main-img{
+        display: none;
+    }
+    #about h2{
+        margin: -20rem 0 0 0;
+        color: var(--color-text);
+        text-align: center;
+    }
+    #crop-img{
+        border-radius: 50%;
+        height: 8rem;
+        border: none;
+        margin: 0.3rem;
+    }
+    .circle{
+        margin: 3rem;
+        border-radius: 50%;
+        height: 8.5rem;
+        background: linear-gradient( to bottom right, rgba(var(--color-btn-linear), 1), rgba(var(--color-hue-linear), 1) );
+    }
+    .btn{
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (min-width:200px) and ( max-width:767px ) {
+    .section{
+        margin: 2rem 0 0 0;
+    }
+    #about{
+        display: grid;
+        place-items: center;
+    }
+    #main-img{
+        display: none;
+    }
+    #about h2{
+        margin: 2rem auto;
+        color: var(--color-text);
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    #crop-img{
+        border-radius: 50%;
+        height: 8rem;
+        border: none;
+        margin: 0.3rem;
+    }
+    .circle{
+        margin: 3rem;
+        border-radius: 50%;
+        height: 8.5rem;
+        background: linear-gradient( to bottom right, rgba(var(--color-btn-linear), 1), rgba(var(--color-hue-linear), 1) );
+    }
+    .btn{
+        padding: 0.3rem;
+    }
+   
+}

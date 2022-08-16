@@ -1,0 +1,94 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css);
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(Raleway-VariableFont_wght.ttf);
+}
+:root{
+    --color-nav: #ea8c8f;
+    --color-btn: rgb(159, 85, 228);
+    --color-btn-linear: 321, 32, 240;
+    --color-primary: #ddd;
+    --color-primary-bg: 221, 221, 221;
+    --color-box: #fff;
+    --color-box-bg: 255, 255, 255;
+    --color-text: #000;
+    --color-hue: rgb(95, 95, 224);
+    --color-hue-linear: 45, 45, 238;
+    --color-good:rgb(0, 134, 0);
+}
+.dark-theme{
+    --color-nav: #f05156;
+    --color-btn: rgb(183, 135, 228);
+    --color-btn-linear: 321, 32, 240;
+    --color-primary: #ddd;
+    --color-primary-bg: 73, 73, 73;
+    --color-box: #000;
+    --color-box-bg: 0, 0, 0;
+    --color-text: #fff;
+    --color-hue: rgb(135, 135, 216);
+    --color-hue-linear: 45, 45, 238;
+    --color-good:rgb(0, 255, 0);
+}
+body{   
+    scroll-behavior: smooth;
+}
+.root{
+    position: relative;
+    z-index: 1;
+    margin: auto 1rem;
+
+    font-family: Raleway;
+    font-weight: 600;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@media screen and (min-width:1024px) {
+    body{   
+        scroll-behavior: smooth;
+        background-image: url(../others/beeple.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:1023px) {
+    .root{
+        position: absolute;
+        display: grid;
+        place-items: center;
+    }
+    body{
+        scroll-behavior: smooth;
+        background-image: url(../others/beeple.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width:200px) and ( max-width:767px) {
+    .root{
+        position: absolute;
+        display: grid;
+        place-items: center;
+    }
+    body{
+        scroll-behavior: smooth;
+        background-image: url(../others/beeple.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}

@@ -1,0 +1,28 @@
+#footer{
+    background-color: var(--color-nav);
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    display: grid;
+    place-items: center;
+    height: 10vh;
+}
+
+@media screen and (min-width:1024px) {
+    #footer{
+        color: var(--color-text);
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:1023px ) {
+    #footer{
+        color: var(--color-text);
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:200px) and ( max-width:767px ) {
+    #footer{
+        color: var(--color-text);
+        font-size: 0.9rem;
+    }
+}

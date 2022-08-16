@@ -1,0 +1,158 @@
+#contact{
+    margin-top: 2rem;
+    padding: 2rem;
+    position: relative;
+    background-color: rgba(var(--color-primary-bg),0.5);
+    display: grid;
+    place-items: center;
+}
+form{
+    max-width: 55rem;
+    width: 90%;
+    background: var(--color-box);
+    padding: 4rem;
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    color: var(--color-text);
+    /* font-size: 1.2em; */
+}
+form h1{
+    text-align: center;
+    margin: 1rem;
+}
+label{
+    display: block;
+    margin: 1rem 0;
+}
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 0.1rem solid var(--color-nav);
+    background: var(--color-primary-bg);
+    color: var(--color-nav);
+}
+
+input[type="text"]:focus, textarea:focus{
+    border-bottom: 0.1rem solid var(--color-nav);
+}
+textarea::-webkit-scrollbar{
+    width: 0.4rem;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: var(--color-nav);
+}
+input[type="submit"]{
+    margin-top: 3rem;
+    width: 90%;
+    max-width: 20rem;
+    background: linear-gradient(to right, rgba(var(--color-btn-linear), 1), rgba(var(--color-hue-linear), 1));
+    color: var(--color-box);
+    /* font-size: 0.9rem; */
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+.error{
+    color: var(--color-nav);
+}
+.error-border{
+    border-bottom: 0.1rem solid var(--color-nav);
+}
+#success{
+    color: var(--color-good);
+}
+
+@media screen and (min-width:1024px) {
+    #contact{
+        margin-top: 2rem;
+        padding: 2rem;
+        position: relative;
+        background-color: rgba(var(--color-primary-bg),0.5);
+        display: grid;
+        place-items: center;
+    }
+    form{
+        max-width: 55rem;
+        width: 90%;
+        background: var(--color-box);
+        padding: 4rem;
+        border-radius: 0.3rem;
+        box-sizing: border-box;
+        color: var(--color-text);
+        /* font-size: 1.2em; */
+    }
+    form h1{
+        text-align: center;
+        margin: 1rem;
+    }
+    label{
+        display: block;
+        margin: 1rem 0;
+    }
+    input, textarea{
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        outline: none;
+        resize: none;
+        border: none;
+        border-bottom: 0.1rem solid var(--color-nav);
+        background: var(--color-primary-bg);
+        color: var(--color-nav);
+    }
+
+    input[type="text"]:focus, textarea:focus{
+        border-bottom: 0.1rem solid var(--color-nav);
+    }
+    textarea::-webkit-scrollbar{
+        width: 0.4rem;
+    }
+    textarea::-webkit-scrollbar-thumb{
+        background-color: var(--color-nav);
+    }
+    input[type="submit"]{
+        margin-top: 3rem;
+        width: 90%;
+        max-width: 20rem;
+        background: linear-gradient(to right, rgba(var(--color-btn-linear), 1), rgba(var(--color-hue-linear), 1));
+        color: var(--color-box);
+        font-size: 0.9rem;
+        cursor: pointer;
+        border-radius: 0.3rem;
+    }
+    .center{
+        text-align: center;
+    }
+    .error{
+        color: var(--color-nav);
+    }
+    .error-border{
+        border-bottom: 0.1rem solid var(--color-nav);
+    }
+    #success{
+        color: var(--color-good);
+    }
+}
+
+@media screen and (min-width:768px) and ( max-width:1023px ) {
+    #contact{
+        font-size: 1.6rem;
+    }
+    .center{
+        text-align: center;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width:200px) and ( max-width:767px ) {
+    #contact{
+        font-size: 0.6rem;
+    }
+    .center{
+        text-align: center;
+        font-size: 0.1rem;
+    }
+}

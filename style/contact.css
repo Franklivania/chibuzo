@@ -153,6 +153,6 @@ input[type="submit"]{
     }
     .center input{
         text-align: center;
-        font-size: 0.1rem;
+        font-size: 0.5rem;
     }
 }

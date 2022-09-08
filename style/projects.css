@@ -5,6 +5,13 @@
     padding: 1rem 0;
 }
 
+.project-image{
+    position: relative;
+    overflow: hidden;
+    height: 20rem;
+    width: 40rem;
+}
+
 .project-content h2{
     margin: 1.5rem 0 2rem 0;
 }

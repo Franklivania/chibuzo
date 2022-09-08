@@ -85,12 +85,13 @@
         position: relative;
         overflow: hidden;
         height: 10rem;
-        width: auto;
+        width: 100%;
     }
     .project-image img{
         width: auto;
         height: 100%;
-        padding: 0 0.5rem;
+        display: grid;
+        place-items: center;
     }
     .project-content{
         display: flex;

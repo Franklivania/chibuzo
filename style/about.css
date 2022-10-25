@@ -18,10 +18,18 @@ a{
     background: linear-gradient( to bottom right, rgba(var(--color-btn-linear), 1), rgba(var(--color-hue-linear), 1) );
 }
 .btn{
-    background-color: var(--color-btn);
+    background-color: var(--color-nav);
+    color: var(--color-primary);
     font-weight: bold;
-    border: var(--color-hue) 0.2rem solid;
+    border: none;
+    font-family: 'Raleway', serif;
 }
+
+.btn:hover , a:hover{
+    background-color: var(--color-btn);
+    color: var(--color-primary);
+}
+
 @media screen and (min-width:1024px) {
     .section{
         margin: 2rem 0 0 0;
@@ -59,9 +67,10 @@ a{
     }
     .btn{
         padding: 0.7rem;
-        background-color: var(--color-btn);
+        background-color: var(--color-nav);
+        color: var(--color-primary);
         font-weight: bold;
-        border: var(--color-hue) 0.2rem solid;
+        border: none;
     }
 }
 

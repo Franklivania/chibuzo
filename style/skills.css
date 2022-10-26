@@ -3,8 +3,6 @@
     margin: 2rem 0 0 0;
     padding: 2rem;
     color: var(--color-text);
-    display: flex;
-    flex-wrap: wrap;
 }
 .skill-head{
     color: var(--color-text);
@@ -20,8 +18,7 @@
 }
 .skills {
     text-align: right; 
-    padding-top: 10px; 
-    padding-bottom: 10px; 
+    padding: 0.1rem 0;
     color: var(--color-primary);
     border-radius: 3rem;
 }
@@ -46,8 +43,8 @@
         margin: 2rem 0 0 0;
         padding: 2rem;
         color: var(--color-text);
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: auto auto;
     }
     .skill-head{
         color: var(--color-text);
@@ -61,7 +58,7 @@
         margin: 1rem;
         background-color: var(--color-box);
         padding: 2rem;
-        width: 45%;
+        width: auto;
         border-radius: 0.6rem;
         box-shadow: 0 0 0.8rem rgba(var(--color-primary-bg),0.8);
     }
@@ -72,8 +69,7 @@
     }
     .skills {
         text-align: right; 
-        padding-top: 10px; 
-        padding-bottom: 10px; 
+        padding: 0.02rem;
         color: var(--color-primary);
         border-radius: 3rem;
     }
@@ -96,14 +92,15 @@
 @media screen and (min-width:768px) and ( max-width:1023px ) {
     #skills{
         display: grid;
-        place-items: center;
+        grid-template-columns: 1fr;
     }
+
     .skill-pod{    
         position: relative;
         margin: 1rem;
         background-color: var(--color-box);
         padding: 2rem;
-        width: 45%;
+        width: auto;
         border-radius: 0.6rem;
         box-shadow: 0 0 0.8rem rgba(var(--color-primary-bg),0.8);
     }
@@ -111,12 +108,18 @@
 }
 
 @media screen and (min-width:200px) and ( max-width:767px ) {
+
+    #skills{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
     .skill-pod{    
         position: relative;
         margin: 1rem;
         background-color: var(--color-box);
         padding: 2rem;
-        width: 100%;
+        width: auto;
         border-radius: 0.6rem;
         box-shadow: 0 0 0.8rem rgba(var(--color-primary-bg),0.8);
     }

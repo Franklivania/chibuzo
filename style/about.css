@@ -25,7 +25,7 @@ a{
     font-family: 'Raleway', serif;
 }
 
-.btn:hover , a:hover{
+.btn:hover , button a:hover{
     background-color: var(--color-btn);
     color: var(--color-primary);
 }

@@ -150,6 +150,7 @@ input[type="submit"]{
 @media screen and (min-width:200px) and ( max-width:767px ) {
     #contact{
         font-size: 0.6rem;
+        padding: 0.3rem;
     }
     .center input{
         text-align: center;

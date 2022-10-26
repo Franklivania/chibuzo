@@ -4,6 +4,20 @@
     padding: 2rem;
     color: var(--color-text);
 }
+
+.skilled{
+    opacity: 0;
+    filter: blur(0.5rem);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
 .skill-head{
     color: var(--color-text);
     font-weight: 800;
@@ -15,27 +29,43 @@
     width: 100%;
     background-color: var(--color-primary);
     border-radius: 3rem;
+    opacity: 0;
+    transform: translateX(-20%);
+    transition: all 2s;
 }
+.reveal{
+    opacity: 1;
+    transform: translate(0);
+}
+
 .skills {
-    text-align: right; 
-    padding: 0.1rem 0;
+    padding: 0.2rem 0;
     color: var(--color-primary);
     border-radius: 3rem;
 }
-.html {width: 70%; background-color: #04AA6D;} 
-.css {width: 80%; background-color: #2196F3;} 
-.js {width: 20%; background-color: #dfcb1a;} 
-.react {width: 40%; background-color: #1149e2;} 
 
-.vs {width: 50%; background-color: #0468aa;} 
-.git {width: 50%; background-color: #031a2e;} 
-.write {width: 60%; background-color: #6bb417;} 
-.design {width: 40%; background-color: #5c117a;} 
+.skill-pod p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
 
-.english {width: 100%; background-color: #133466;} 
-.igbo {width: 100%; background-color: #8f6200;} 
-.spanish {width: 30%; background-color: #9b350d;} 
-.jap {width: 10%; background-color: #520a00;}
+.html {width: 70%; background-color: var(--color-nav);} 
+.css {width: 80%; background-color: var(--color-nav);} 
+.js {width: 20%; background-color: var(--color-nav);} 
+.react {width: 40%; background-color: var(--color-nav);} 
+
+.vs {width: 65%; background-color: var(--color-nav);} 
+.git {width: 50%; background-color: var(--color-nav);} 
+.write {width: 60%; background-color: var(--color-nav);} 
+.design {width: 40%; background-color: var(--color-nav);}
+.figma {width: 40%; background-color: var(--color-nav);}
+
+.english {width: 100%; background-color: var(--color-nav);} 
+.igbo {width: 100%; background-color: var(--color-nav);} 
+.spanish {width: 30%; background-color: var(--color-nav);} 
+.jap {width: 10%; background-color: var(--color-nav);}
 
 @media screen and (min-width:1024px) {
     #skill{
@@ -68,25 +98,26 @@
         border-radius: 3rem;
     }
     .skills {
-        text-align: right; 
-        padding: 0.02rem;
+        padding: 0.2rem 0;
         color: var(--color-primary);
         border-radius: 3rem;
     }
-    .html {width: 70%; background-color: #04AA6D;} 
-    .css {width: 80%; background-color: #2196F3;} 
-    .js {width: 20%; background-color: #dfcb1a;} 
-    .react {width: 40%; background-color: #1149e2;} 
 
-    .vs {width: 50%; background-color: #0468aa;} 
-    .git {width: 50%; background-color: #031a2e;} 
-    .write {width: 60%; background-color: #6bb417;} 
-    .design {width: 40%; background-color: #5c117a;} 
+    .html {width: 80%; background-color: var(--color-nav);} 
+    .css {width: 85%; background-color: var(--color-nav);} 
+    .js {width: 25%; background-color: var(--color-nav);} 
+    .react {width: 45%; background-color: var(--color-nav);} 
 
-    .english {width: 100%; background-color: #133466;} 
-    .igbo {width: 100%; background-color: #8f6200;} 
-    .spanish {width: 30%; background-color: #9b350d;} 
-    .jap {width: 10%; background-color: #520a00;}
+    .vs {width: 65%; background-color: var(--color-nav);} 
+    .git {width: 50%; background-color: var(--color-nav);} 
+    .write {width: 60%; background-color: var(--color-nav);} 
+    .design {width: 40%; background-color: var(--color-nav);} 
+    .figma {width: 40%; background-color: var(--color-nav);}
+
+    .english {width: 100%; background-color: var(--color-nav);} 
+    .igbo {width: 100%; background-color: var(--color-nav);} 
+    .spanish {width: 30%; background-color: var(--color-nav);} 
+    .jap {width: 10%; background-color: var(--color-nav);}
 }
 
 @media screen and (min-width:768px) and ( max-width:1023px ) {

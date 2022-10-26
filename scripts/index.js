@@ -10,6 +10,38 @@ icon.onclick = function(){
     }
 }
 
+//for transition on scroll
+
+const observer =  new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else{   //to show repeatedly
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.skilled');
+hiddenElements.forEach((el) => observer.observe(el));
+
+//for the percentages
+const observe =  new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('reveal');
+        } else{   //to show repeatedly
+            entry.target.classList.remove('reveal');
+        }
+    });
+});
+
+const hideElements = document.querySelectorAll('.container');
+hideElements.forEach((el) => observe.observe(el));
+
+
 //Get data
 const nameInput = document.querySelector("#name");
 const email = document.querySelector("#email");

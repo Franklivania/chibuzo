@@ -90,6 +90,7 @@
         overflow: hidden;
         height: 10rem;
         width: 100%;
+        padding: 0 0 0 1.2rem;
     }
     .project-image img{
         width: auto;

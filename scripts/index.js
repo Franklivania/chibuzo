@@ -99,3 +99,14 @@ function emailIsValid(email){
 function toggleMobileMenu(menu){
     menu.classList.toggle('open');
 }
+
+//for smoother scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
